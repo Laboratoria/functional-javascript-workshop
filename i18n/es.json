@@ -1,0 +1,70 @@
+{
+  "title": "JavaScript Funcional",
+  "subtitle": "\u001b[23mSelecciona una ejercicio y dale a \u001b[3mEnter\u001b[23m para comenzar",
+  "common": {
+    "exercise": {
+      "fail": {
+        "missing_deps": "Tienes que instalar todas las dependencias que usa tu solución (por ejemplo lodash)",
+        "module_not_found": "No se encontró tu archivo. Asegúrate de que la ruta (path) sea correcta.",
+        "must_export_function": "Siempre debes retornar una función al usar el objeto module.exports."
+      },
+      "input": "entrada:      %s",
+      "submission": "submission: %s",
+      "solution": "solución:   %s"
+    }
+  },
+  "exercise": {
+    "Hello World": "Hola Mundo",
+    "Higher Order Functions": "Higher Order Functions",
+    "Basic: Map": "Las bases: Map",
+    "Basic: Filter": "Las bases: Filter",
+    "Basic: Every Some": "Las bases: Every, Some",
+    "Basic: Reduce": "Las bases: Reduce",
+    "Basic: Recursion": "Las bases: Recursividad",
+    "Basic: Call": "Las bases: Call",
+    "Partial Application without Bind": "Aplicación Parcial sin Bind",
+    "Partial Application with Bind": "Aplicación Parcial con Bind",
+    "Implement Map with Reduce": "Implementar Map con Reduce",
+    "Function Spies": "Espías de funciones",
+    "Blocking Event Loop": "Bloqueando el Event Loop",
+    "Trampoline": "Trampoline",
+    "Async Loops": "Bucles Asíncronos",
+    "Recursion": "Recursividad",
+    "Currying": "Currying",
+    "Function Call": "Invocación de función"
+  },
+  "exercises": {
+    "Basic: Map": {
+      "didnt_use_map": "No usaste Array#map",
+      "used_map": "Súper!  Usaste Array#map"
+    },
+    "Basic: Every Some": {
+      "found_good_lists": "se encontraron %d usuarios buenos!"
+    },
+    "Basic: Call": {
+      "matched_objects": "Matched %d of %d valid objects from %d total."
+    },
+    "Higher Order Functions": {
+      "call_log": "Función invocada %d veces."
+    },
+    "Function Spies": {
+      "call_times": "Method called %d times.",
+      "incorrect_return": "Check your function's return value!",
+      "incorrect_this": "Check the function's this! Hint: Function#apply",
+      "not_all_args": "Check you are passing ALL the arguments! Hint: Function#apply",
+      "incorrect_count": "Check that your Spy is counting the method invocations correctly!"
+    },
+    "Trampoline": {
+      "intro": "repeating %d times",
+      "result": "Successfully executed %d times."
+    },
+    "Async Loops": {
+      "all_loaded": "All %d users loaded!",
+      "bad_result": "expected: \n%s\n but got:\n%s",
+      "took_too_long": "Took too long!"
+    },
+    "Currying": {
+      "five_words": "This,problem,has,been,solved"
+    }
+  }
+}
