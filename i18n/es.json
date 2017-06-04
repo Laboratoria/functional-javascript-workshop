@@ -16,22 +16,22 @@
   "exercise": {
     "Hello World": "Hola Mundo",
     "Higher Order Functions": "Higher Order Functions",
-    "Basic: Map": "Las bases: Map",
-    "Basic: Filter": "Las bases: Filter",
-    "Basic: Every Some": "Las bases: Every, Some",
-    "Basic: Reduce": "Las bases: Reduce",
-    "Basic: Recursion": "Las bases: Recursividad",
-    "Basic: Call": "Las bases: Call",
+    "Basic: Map": "Map",
+    "Basic: Filter": "Filter",
+    "Basic: Every Some": "Every, Some",
+    "Basic: Reduce": "Reduce",
+    "Basic: Recursion": "Recursividad",
+    "Basic: Call": "Call",
     "Partial Application without Bind": "Aplicación Parcial sin Bind",
     "Partial Application with Bind": "Aplicación Parcial con Bind",
     "Implement Map with Reduce": "Implementar Map con Reduce",
-    "Function Spies": "Espías de funciones",
+    "Function Spies": "Funciones espía",
     "Blocking Event Loop": "Bloqueando el Event Loop",
     "Trampoline": "Trampoline",
     "Async Loops": "Bucles Asíncronos",
     "Recursion": "Recursividad",
     "Currying": "Currying",
-    "Function Call": "Invocación de función"
+    "Function Call": "Invocación"
   },
   "exercises": {
     "Basic: Map": {
