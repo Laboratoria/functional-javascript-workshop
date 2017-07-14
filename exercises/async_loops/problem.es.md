@@ -27,7 +27,7 @@ El orden de los usuarios debería coincidir con el orden de los ID de usuarios s
 
 ## Condiciones
 
-* No usar lazos _for/while_  (Arreglos #forEach está bien).
+* No usar lazos _for/while_  (usar _Array#forEach_ está bien).
 * El orden de los resultados en `done` debe ser los mismos que fueron especificados en `userIds`.
 * Los usuarios deben ser cargados en paralelo, por ejemplo el tiempo  total de la tarea no debe tomar mas de un segundo.
 * No crear ninguna función innecesario como por ejemplo _helpers_.
