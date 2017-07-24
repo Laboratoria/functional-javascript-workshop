@@ -1,6 +1,6 @@
 # Tarea
 
-Hacer exactamente la misma tarea que en "Basic Inhertance with Object.create", con la condición de no usar Object.create.
+Hacer exactamente la misma tarea que en "Basic Inheritance with Object.create", con la condición de no usar Object.create.
 
 Los detalles están copiados debajo de estas líneas para su referencia.
 
@@ -14,7 +14,7 @@ Los detalles están copiados debajo de estas líneas para su referencia.
 
 * Los prototipos son siempre objetos.
 * Tu instancia `BetterUser` necesita 'heredar' desde `User.prototype`
-* No hay razón para no crear objetos ficticios en el árbol  de herencias
+* No hay razón para no crear objetos ficticios en el árbol de herencias
 * Debe entender lo que hace `Object.create` does.
 
 ## Recursos
@@ -25,7 +25,7 @@ Los detalles están copiados debajo de estas líneas para su referencia.
 
 Crear un "BetterUser" que extienda "User" reemplazando el método `.toString`.
 
-Su función exportada será  pasada de la función constructor para un tipo "User" que se parece a esto: 
+Su función exportada será  pasada de la función constructor para un tipo "User" que se parece a esto:
 
 ```js
 
@@ -34,7 +34,7 @@ Su función exportada será  pasada de la función constructor para un tipo "Use
  * Usuario Constructor.
  *
  * @param title {String} Título del usuario, por ejemplo 'Sr.', 'Sra.', 'Dr.', etc.
- * @param name {String} Nombre del usuario, por ejemplo 'Juan Ramos'.* 
+ * @param name {String} Nombre del usuario, por ejemplo 'Juan Ramos'.*
  *
  */
 

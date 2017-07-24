@@ -1,6 +1,6 @@
 # Tarea
 
-Implementar una función recursiva que devuelva todas las dependencias únicas y subdependencias de un módulo ordenadas alfabéticamente. Las dependencias deben imprimirse como dependencia @ versión, p. 'Inflection@1.2.6'.
+Implementar una función recursiva que devuelva todas las dependencias únicas y subdependencias de un módulo ordenadas alfabéticamente. Las dependencias deben imprimirse como dependencia@versión, p. 'Inflection@1.2.6'.
 
 Se permiten múltiples versiones del mismo módulo, pero los módulos duplicados de la misma versión deben eliminarse
 
@@ -35,7 +35,7 @@ getDependencies(loremIpsum) // => [ 'inflection@1.2.6', 'optimist@0.3.7', 'wordw
 
 ## Condiciones:
 
-* No usar ninguna estructura enlazada como _for/while_.
+* No usar ninguna estructura enlazada como for/while.
 
 ## Plantilla
 

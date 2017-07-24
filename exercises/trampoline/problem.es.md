@@ -19,7 +19,7 @@ repeat(function() {
 }, 100000)
 
 console.log('executed %d times', count)
-// => RangeError: Se excedió el número máximo de llamadas a la pila
+// => RangeError: Maximum call stack size exceeded
 
 ```
 

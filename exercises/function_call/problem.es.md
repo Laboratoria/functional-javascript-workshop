@@ -43,15 +43,15 @@ nums.slice(1, 2) // [2]
 
 ## Condiciones
 
-* No usar ningún lazo _for/while_ o _Array#forEach_.
-* No usar la palabra clave `function`:D
+* No usar ningún lazo for/while o Array#forEach.
+* No usar la palabra clave `function` :D
 
 ## Pistas
 
 * Es un programa de una sola línea o _one liner_.
 * Cada función JavaScript hereda métodos tales como _call_, _apply_ y _bind_ del objeto `Function.prototype`.
-* _Function#call_ ejecuta el valor `this` cuando es invocado.  Dentro de  `someFunction.call()`, el valor `this` será `someFunction`.
-* _Function.call_ es una función por sí misma  y hereda de `Function.prototype`.
+* Function#call ejecuta el valor `this` cuando es invocado. Dentro de  `someFunction.call()`, el valor `this` será `someFunction`.
+* Function.call es una función por sí misma y hereda de `Function.prototype`.
 
 ```js
 function myFunction() {

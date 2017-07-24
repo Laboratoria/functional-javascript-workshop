@@ -1,6 +1,6 @@
 ¡Este código está dañado!
 
-Un desarrollador que trabaja en Java ha hecho commit de este terrible código a nuestro reporsitorio y, ¡no lo probó!
+Un desarrollador que trabaja en Java ha hecho _commit_ de este terrible código a nuestro repositorio y, ¡no lo probó!
 
 ```js
 function loadUsers(userIds, load, done) {
@@ -22,15 +22,15 @@ El orden de los usuarios debería coincidir con el orden de los ID de usuarios s
 ## Argumentos
 
 * userIds: un arreglo numérico de ID de usuarios.
-* load: una función usada para cargar los objectos usuario. La función espera un ID numérico y una llamada _callback_. La llamada _callback_ se invoca con el resultado de cargar los usuarios con el ID especificado (un objecto ID de usuario o devuelve una respuesta nula _null_).
+* load: una función usada para cargar los objetos usuario. La función espera un ID numérico y una llamada _callback_. La llamada _callback_ se invoca con el resultado de cargar los usuarios con el ID especificado (un objeto ID de usuario o devuelve una respuesta nula _null_).
 * done: una función que espera un arreglo con objetos usuario (como fue recuperado desde `load`).
 
 ## Condiciones
 
-* No usar lazos _for/while_  (usar _Array#forEach_ está bien).
+* No usar lazos for/while  (usar _Array#forEach_ está bien).
 * El orden de los resultados en `done` debe ser los mismos que fueron especificados en `userIds`.
-* Los usuarios deben ser cargados en paralelo, por ejemplo el tiempo  total de la tarea no debe tomar mas de un segundo.
-* No crear ninguna función innecesario como por ejemplo _helpers_.
+* Los usuarios deben ser cargados en paralelo, por ejemplo el tiempo  total de la tarea no debe tomar más de un segundo.
+* No crear ninguna función innecesaria como por ejemplo _helpers_.
 
 ## Pistas
 

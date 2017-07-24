@@ -1,4 +1,3 @@
-
 Vamos a implementar un programa análogo de la herencia prototípica de JavaScript a mano, para asegurarnos que entendemos exactamente cómo funciona la herencia prototípica
 
 # Tarea
@@ -39,10 +38,10 @@ var otherKitten = {
 kitten.__PROTO__ = cat
 otherKitten.__PROTO__ = cat
 
-Lookup(kitten, 'color')  // => 'negro'
-Lookup(otherKitten, 'color')  // => 'gris'
+Lookup(kitten, 'color')  // => 'black'
+Lookup(otherKitten, 'color')  // => 'grey'
 
-Lookup(kitten, 'wings')  // => indefinido
+Lookup(kitten, 'wings')  // => undefined
 
 // cambiar las propiedades en los prototipos debería
 // afectar cualquier instancia que herede los prototipos de la misma.
@@ -54,7 +53,7 @@ Lookup(kitten, 'color')  // => 'blue'
 Lookup(otherKitten, 'color')  // => 'grey'
 
 ```
-Nota: en JavaScript, cuando se obtiene una propiedad usando _'get'_ (es decir, _lookup_), el motor sube a la cadena de prototipos para encontrar el valor, pero si se "establece" una propiedad ignora la cadena de prototipos y simplemente establece el valor en la propiedad del objeto actual. Podríamos haber implementado un _'Setter'_ como ejercicio, pero la realidad es que es bastante trivial:
+Nota al margen: en JavaScript, cuando se obtiene una propiedad usando _'get'_ (es decir, _lookup_), el motor sube a la cadena de prototipos para encontrar el valor, pero si se "establece" una propiedad ignora la cadena de prototipos y simplemente establece el valor en la propiedad del objeto actual. Podríamos haber implementado un _'Setter'_ como ejercicio, pero la realidad es que es bastante trivial:
 
 ```js
 
@@ -68,7 +67,7 @@ function Setter(context, property, value) {
 
 `Create` simulará el comportamiento de `Object.create`.
 
-A `Create` se le pasará un  objeto, usted debe retornar un nuevo objeto con su prototipo (`__PROTO__`) establecido en el objeto suministrado.
+A `Create` se le pasará un objeto, usted debe retornar un nuevo objeto con su prototipo (`__PROTO__`) establecido en el objeto suministrado.
 
 ```js
 fuction Cat() {
@@ -94,7 +93,7 @@ Lookup(kitten, 'speak')() // => 'Miau!'
 
 `New` simulará el comportamiento de la palabra clave `new` en JavaScript.
 
-El primer argumento que se le pasará a `New` será el constructor de la función (por ejemplo un tipo _type_).  Los parámetros posteriores deben ser pasados a la función constructor cuando se crea el nuevo objeto. 
+El primer argumento que se le pasará a `New` será el constructor de la función (por ejemplo un tipo _type_).  Los parámetros posteriores deben ser pasados a la función constructor cuando se crea el nuevo objeto.
 
 `New` devolverá nuevos objetos utilizando la función de constructor suministrada.
 
@@ -111,7 +110,7 @@ var brownCat = New(Cat, 'brown')
 brownCat.color // => brown
 
 ```
-La función constructor pasada a `New` puede tener una propiedad` .PROTOTYPE`. Todos los objetos creados con este constructor tendrán su `__PROTO__` establecido por defecto en la propiedad` .PROTOTYPE` del constructor.
+La función constructor pasada a `New` puede tener una propiedad `.PROTOTYPE`. Todos los objetos creados con este constructor tendrán su `__PROTO__` establecido por defecto en la propiedad `.PROTOTYPE` del constructor.
 
 ```js
 
@@ -140,6 +139,7 @@ var brownCat = New(Cat, 'brown')
 brownCat.color // => brown
 
 ```
+
 Las propiedades del prototipo deben estar disponibles en el constructor:
 
 ```js
@@ -155,6 +155,7 @@ Cow.PROTOTYPE.moo = true
 var cow = New(Cow) // 'moo' verdadero
 
 ```
+
 También necesitamos simular otro comportamiento de la palabra clave `new`: Si el propio constructor devuelve un valor,` New` devolverá ese mismo valor.
 
 ```js
@@ -169,14 +170,9 @@ var cat = New(Cat) // 3
 
 ## Condiciones
 
-* Do not use any built-in javascript prototypical inheritance features.
-* Do not call `new`
-* Do not use `__proto__`, `Object.getPrototypeOf` or `Object.setPrototypeOf`
-
-* No utilice ninguna de las funcionalidades de herencia que trae el prototipo javascript incorporada.
+* No utilice ninguna de las funcionalidades de herencia prototipal que incluye JavaScript.
 * No haga llamadas a `new`
-* No utilice `__proto__`,` Object.getPrototypeOf` o `Object.setPrototypeOf`
-
+* No utilice `__proto__`, `Object.getPrototypeOf` o `Object.setPrototypeOf`
 
 ## Pistas
 
